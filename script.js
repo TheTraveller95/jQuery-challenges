@@ -14,18 +14,6 @@ $(document).ready(function() {
     })
 
 
-	$("#stream2_btn").on("click", function() {
-		$(".stream1").removeClass('highlight_stream');
-		$(".stream2").removeClass('highlight_stream');
-		$(".stream3").removeClass('highlight_stream');
-	  	$(".stream2").addClass('highlight_stream');
-	});
-	$("#stream3_btn").on("click", function() {
-		$(".stream1").removeClass('highlight_stream');
-		$(".stream2").removeClass('highlight_stream');
-		$(".stream3").removeClass('highlight_stream');
-	  	$(".stream3").addClass('highlight_stream');
-	});
 
     $("#button1").mouseenter(function(){
         $("#button1").fadeTo('slow',0.5)
@@ -39,16 +27,16 @@ $(document).ready(function() {
         $("#p_button1").slideToggle('3000')
     })
 
-    $(".card").click(function(){
+    $("#stream1_btn").click(function(){
         var className = $(this).attr("class").split(" ");
         var card = className[0];
         var stream = className[1];
 
-        if($(this).css("background-color") == "#fff"){
-            $("."+className[1]).css("background-color", "red")
+        if($(this).css("background-color") == '#ffff'{
+            $("."+ stream).css("background-color", "red");
 
         } else {
-             $("."+className[1]).css("background-color", "white");
+             $("."+ stream).css("background-color", "white");
         }
 
     })
