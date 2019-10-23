@@ -27,16 +27,17 @@ $(document).ready(function() {
         $("#p_button1").slideToggle('3000')
     })
 
-    $("#stream1_btn").click(function(){
-        var className = $(this).attr("class").split(" ");
-        var card = className[0];
-        var stream = className[1];
+    $("#stream1, #stream2, #stream3").click(function(){
+        var idName2 = $(this).attr("id");
+        var className = $(".card").attr("class").split(" ");
+        var className2 = className[1];
+        console.log(className);
 
-        if($(this).css("background-color") == '#ffff'{
-            $("."+ stream).css("background-color", "red");
+        if("idName2" == "className2"  && $(className).css("background-color")=="#fff"){
+            $("."+className2).css("background-color", "red");
 
         } else {
-             $("."+ stream).css("background-color", "white");
+             $("."+className2).css("background-color", "white");
         }
 
     })
