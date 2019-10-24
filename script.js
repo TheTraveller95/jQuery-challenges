@@ -42,4 +42,12 @@ $(document).ready(function() {
 
     })
 
+    $(".card_image").click(function(){
+        $(".card_image").siblings("p").children("a").css("background-color","yellow")
+    })
+
+    $("#button1").click(function(){
+        $("#button1").siblings("p").slideToggle(slow)
+    })
+
 });
